@@ -7,7 +7,7 @@ export interface AppProps {
 export interface AppState {
 }
 
-export default class patchScreen extends React.Component<AppProps, AppState> {
+export default class PatchScreen extends React.Component<AppProps, AppState> {
     constructor(props: AppProps) {
         super(props);
         this.state = {

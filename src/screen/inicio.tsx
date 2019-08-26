@@ -7,7 +7,7 @@ export interface AppProps {
 export interface AppState {
 }
 
-export default class inicioScreen extends React.Component<AppProps, AppState> {
+export default class InicioScreen extends React.Component<AppProps, AppState> {
   constructor(props: AppProps) {
     super(props);
     this.state = {

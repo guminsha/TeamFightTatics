@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, ImageBackground } from 'react-native';
 import { Input, Button } from 'react-native-elements';
+import QuadradoView from './../components/quadrado'
 
 export interface AppProps {
 }
@@ -9,7 +10,7 @@ export interface AppState {
     invocador: string;
 }
 
-export default class invocadorScreen extends React.Component<AppProps, AppState> {
+export default class InvocadorScreen extends React.Component<AppProps, AppState> {
 
     constructor(props: AppProps) {
         super(props);
@@ -37,12 +38,13 @@ export default class invocadorScreen extends React.Component<AppProps, AppState>
                 <View style={{ alignItems: 'center' }}>
                     <Button title="Buscar" onPress={() => this.buscarInvocador()} buttonStyle={{ borderRadius: 20, width: 150, marginTop: 20 }} />
                 </View>
-                
-                <View style={styles.quadrado}>
+
+                <QuadradoView>
                     <Text style={styles.info}>"Invocador"</Text>
                     <Text style={styles.info}>"Level"</Text>
                     <Text style={styles.info}>"Elo TFT"</Text>
-                </View>
+                </QuadradoView>
+
 
             </View>
         </ImageBackground>)
