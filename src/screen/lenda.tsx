@@ -25,18 +25,27 @@ export default class InicioScreen extends React.Component<AppProps, AppState> {
           <Image source={require('../../assets/img/Lendas/Icones/River_Sprite.png')} style={styles.lenda}></Image>
         </QuadradoLendas>
         <QuadradoLendas>
+          <View style={{ width: '100%', alignItems: 'center', }}>
+            <Image source={require('../../assets/img/Lendas/Ovos/Teamfight_Tactics_2019_Egg1.png')} style={styles.ovo}></Image>
+          </View>
           <Text style={styles.serie}>Série 1</Text>
           <Image source={require('../../assets/img/Lendas/Icones/Furyhorn_Molten_Tier_1.png')} style={styles.lenda}></Image>
           <Image source={require('../../assets/img/Lendas/Icones/Hauntling_Shadow_Isles_Tier_1.png')} style={styles.lenda}></Image>
           <Image source={require('../../assets/img/Lendas/Icones/Silverwing_Demacian_Tier_1.png')} style={styles.lenda}></Image>
         </QuadradoLendas>
         <QuadradoLendas>
+          <View style={{ width: '100%', alignItems: 'center', }}>
+            <Image source={require('../../assets/img/Lendas/Ovos/Teamfight_Tactics_2019_Egg2.png')} style={styles.ovo}></Image>
+          </View>
           <Text style={styles.serie}>Série 2</Text>
           <Image source={require('../../assets/img/Lendas/Icones/Featherknight_Pengu_Tier_1.png')} style={styles.lenda}></Image>
           <Image source={require('../../assets/img/Lendas/Icones/Runespirit_Sentinel_Tier_1.png')} style={styles.lenda}></Image>
           <Image source={require('../../assets/img/Lendas/Icones/Molediver_Soft-nosed_Tier_1.png')} style={styles.lenda}></Image>
         </QuadradoLendas>
         <QuadradoLendas>
+          <View style={{ width: '100%', alignItems: 'center', }}>
+            <Image source={require('../../assets/img/Lendas/Ovos/Teamfight_Tactics_2019_Egg3.png')} style={styles.ovo}></Image>
+          </View>
           <Text style={styles.serie}>Série 3</Text>
           <Image source={require('../../assets/img/Lendas/Icones/Protector_Jeweled_Tier_1.png')} style={styles.lenda}></Image>
           <Image source={require('../../assets/img/Lendas/Icones/Hushtail_Moontipped_Tier_1.png')} style={styles.lenda}></Image>
@@ -72,6 +81,13 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     margin: 3,
+    borderWidth: 2,
+    borderRadius: 5,
+    borderColor: 'rgb(255, 215, 0)',
+  },
+  ovo: {
+    width: 50,
+    height: 50,
     borderWidth: 2,
     borderRadius: 5,
     borderColor: 'rgb(255, 215, 0)',
