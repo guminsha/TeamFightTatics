@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   },
   logo: {
     color: 'white',
-    fontSize: 30,
+    fontSize: 34,
     textAlign: 'center',
   },
   tituloVideo: {
