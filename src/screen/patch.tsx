@@ -66,7 +66,9 @@ const styles = StyleSheet.create({
         width: 40,
         height: 40,
         marginTop: 10,
+        borderWidth: 1,
         borderRadius: 5,
+        borderColor: 'rgb(255, 215, 0)',
     },
     champText: {
         color: 'white',
