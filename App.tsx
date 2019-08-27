@@ -1,3 +1,3 @@
-import TesteScreen from './src/screen/lendas/territo';
+import InicioScreen from './src/screen/inicio';
 
-export default TesteScreen;
+export default InicioScreen;

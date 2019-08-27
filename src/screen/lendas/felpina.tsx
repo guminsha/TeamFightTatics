@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, ImageBackground, Vibration, Image } from 'react-native';
+import QuadradoLendas from '../../components/quadradoLendas'
 
 export interface AppProps {
 }
@@ -19,7 +20,7 @@ export default class FelpinaScreen extends React.Component<AppProps, AppState> {
             style={styles.background}>
             <View style={styles.container}>
                 <Text style={styles.logo}>Felpina</Text>
-                <View style={styles.quadrado}>
+                <QuadradoLendas>
                     <Text style={styles.rara}>Rara</Text>
                     <Text style={styles.origem}>Minguante (Original)</Text>
                     <Image source={require('./../../../assets/img/Lendas/Todas/Felpina/Hushtail_Moontipped_Tier_1.png')} style={styles.lenda}></Image>
@@ -33,8 +34,8 @@ export default class FelpinaScreen extends React.Component<AppProps, AppState> {
                     <Image source={require('./../../../assets/img/Lendas/Todas/Felpina/Hushtail_Mistberry_Tier_1.png')} style={styles.lenda}></Image>
                     <Image source={require('./../../../assets/img/Lendas/Todas/Felpina/Hushtail_Mistberry_Tier_2.png')} style={styles.lenda}></Image>
                     <Image source={require('./../../../assets/img/Lendas/Todas/Felpina/Hushtail_Mistberry_Tier_3.png')} style={styles.lenda}></Image>
-                </View>
-                <View style={styles.quadrado}>
+                </QuadradoLendas>
+                <QuadradoLendas>
                     <Text style={styles.epica}>Épica</Text>
                     <Text style={styles.origem}>Borboleta</Text>
                     <Image source={require('./../../../assets/img/Lendas/Todas/Felpina/Hushtail_Monarch_Tier_1.png')} style={styles.lenda}></Image>
@@ -44,14 +45,14 @@ export default class FelpinaScreen extends React.Component<AppProps, AppState> {
                     <Image source={require('./../../../assets/img/Lendas/Todas/Felpina/Hushtail_Untamed_Tier_1.png')} style={styles.lenda}></Image>
                     <Image source={require('./../../../assets/img/Lendas/Todas/Felpina/Hushtail_Untamed_Tier_2.png')} style={styles.lenda}></Image>
                     <Image source={require('./../../../assets/img/Lendas/Todas/Felpina/Hushtail_Untamed_Tier_3.png')} style={styles.lenda}></Image>
-                </View>
-                <View style={styles.quadrado}>
+                </QuadradoLendas>
+                <QuadradoLendas>
                     <Text style={styles.lendaria}>Lendária</Text>
                     <Text style={styles.origem}>Eterna</Text>
                     <Image source={require('./../../../assets/img/Lendas/Todas/Felpina/Hushtail_Eternal_Tier_1.png')} style={styles.lenda}></Image>
                     <Image source={require('./../../../assets/img/Lendas/Todas/Felpina/Hushtail_Eternal_Tier_2.png')} style={styles.lenda}></Image>
                     <Image source={require('./../../../assets/img/Lendas/Todas/Felpina/Hushtail_Eternal_Tier_3.png')} style={styles.lenda}></Image>
-                </View>
+                </QuadradoLendas>
             </View>
         </ImageBackground>)
     }
@@ -71,15 +72,6 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 34,
         textAlign: 'center',
-    },
-    quadrado: {
-        backgroundColor: 'rgba(0,0,0, 0.7)',
-        width: '100%',
-        padding: 10,
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        borderRadius: 20,
-        marginBottom: 20,
     },
     lenda: {
         width: 100,

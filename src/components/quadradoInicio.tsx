@@ -7,7 +7,7 @@ export interface AppProps {
 export interface AppState {
 }
 
-export default class QuadradoView extends React.Component<AppProps, AppState> {
+export default class QuadradoInicio extends React.Component<AppProps, AppState> {
     constructor(props: AppProps) {
         super(props);
         this.state = {
@@ -17,6 +17,7 @@ export default class QuadradoView extends React.Component<AppProps, AppState> {
     public render() {
         return (
             <View style={styles.quadrado}>
+                {this.props.children}
             </View>
         );
     }

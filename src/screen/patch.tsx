@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, ImageBackground, Vibration, Image } from 'react-native';
+import QuadradoView from './../components/quadradoInicio'
 
 export interface AppProps {
 }
@@ -19,7 +20,7 @@ export default class PatchScreen extends React.Component<AppProps, AppState> {
             style={styles.background}>
             <View style={styles.container}>
                 <Text style={styles.titulo}>Patch Notes</Text>
-                <View style={styles.quadrado}>
+                <QuadradoView>
                     <Text style={styles.semiTitulo}>9.16b</Text>
                     <Text style={styles.tema}>Campeões</Text>
                     <Image source={require('./../../assets/img/Champs/Todos/Draven_GladiatorSquare.png')} style={styles.champImg}></Image>
@@ -40,7 +41,7 @@ export default class PatchScreen extends React.Component<AppProps, AppState> {
                     <Image source={require('./../../assets/img/Itens/Completo/Ludens_Echo_item.png')} style={styles.champImg}></Image>
                     <Text style={styles.champText}>Eco de Luden:</Text>
                     <Text style={styles.info}>Dano: 200 -> 180</Text>
-                </View>
+                </QuadradoView>
             </View>
         </ImageBackground>)
     }
@@ -60,13 +61,6 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 30,
         textAlign: 'center',
-    },
-    quadrado: {
-        backgroundColor: 'rgba(0,0,0, 0.7)',
-        width: '100%',
-        padding: 10,
-        flexDirection: 'row',
-        flexWrap: 'wrap',
     },
     champImg: {
         width: 40,
