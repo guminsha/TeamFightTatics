@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         borderRadius: 20,
-        marginBottom: 20,
+        marginBottom: 10,
       },
 });
 
