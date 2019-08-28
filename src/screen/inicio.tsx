@@ -28,7 +28,7 @@ export default class InicioScreen extends React.Component<AppProps, AppState> {
           isMuted={false}
           resizeMode="cover"
           shouldPlay
-          isLooping
+          useNativeControls
           style={{ width: '100%', height: '50%', marginTop: 20, alignContent: 'center' }}
         />
 

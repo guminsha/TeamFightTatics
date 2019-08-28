@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, StyleSheet, Text, ImageBackground, Vibration, Image } from 'react-native';
+import { View, StyleSheet, Text, ImageBackground, Vibration, Image, ScrollView } from 'react-native';
 import QuadradoLendas from '../../components/quadradoLendas'
 
 export interface AppProps {
@@ -18,42 +18,44 @@ export default class TerritoScreen extends React.Component<AppProps, AppState> {
   public render() {
     return (<ImageBackground source={require('./../../../assets/img/backgroundInicio.jpg')}
       style={styles.background}>
-      <View style={styles.container}>
-        <Text style={styles.logo}>Territo</Text>
-        <QuadradoLendas>
-          <Text style={styles.rara}>Rara</Text>
-          <Text style={styles.origem}>Blindado (Original)</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Soft-nosed_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Soft-nosed_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Soft-nosed_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Bombeiro</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Blazebattle_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Blazebattle_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Blazebattle_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Ribeirinho</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Fresh-water_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Fresh-water_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Fresh-water_Tier_3.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-        <QuadradoLendas>
-          <Text style={styles.epica}>Épica</Text>
-          <Text style={styles.origem}>Desastrado</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Clumsy_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Clumsy_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Clumsy_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Venenoso</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Toxic_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Toxic_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Toxic_Tier_3.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-        <QuadradoLendas>
-          <Text style={styles.lendaria}>Lendária</Text>
-          <Text style={styles.origem}>Colorido</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Skydance_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Skydance_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Skydance_Tier_3.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-      </View>
+      <ScrollView>
+        <View style={styles.container}>
+          <Text style={styles.logo}>Territo</Text>
+          <QuadradoLendas>
+            <Text style={styles.rara}>Rara</Text>
+            <Text style={styles.origem}>Blindado (Original)</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Soft-nosed_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Soft-nosed_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Soft-nosed_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Bombeiro</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Blazebattle_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Blazebattle_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Blazebattle_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Ribeirinho</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Fresh-water_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Fresh-water_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Fresh-water_Tier_3.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+          <QuadradoLendas>
+            <Text style={styles.epica}>Épica</Text>
+            <Text style={styles.origem}>Desastrado</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Clumsy_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Clumsy_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Clumsy_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Venenoso</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Toxic_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Toxic_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Toxic_Tier_3.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+          <QuadradoLendas>
+            <Text style={styles.lendaria}>Lendária</Text>
+            <Text style={styles.origem}>Colorido</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Skydance_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Skydance_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Skydance_Tier_3.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+        </View>
+      </ScrollView>
     </ImageBackground >)
   }
 }

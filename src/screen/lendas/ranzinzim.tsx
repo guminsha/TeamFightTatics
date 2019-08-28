@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, StyleSheet, Text, ImageBackground, Vibration, Image } from 'react-native';
+import { View, StyleSheet, Text, ImageBackground, Vibration, Image, ScrollView } from 'react-native';
 import QuadradoLendas from '../../components/quadradoLendas'
 
 export interface AppProps {
@@ -18,42 +18,44 @@ export default class RanzinzimScreen extends React.Component<AppProps, AppState>
   public render() {
     return (<ImageBackground source={require('./../../../assets/img/backgroundInicio.jpg')}
       style={styles.background}>
-      <View style={styles.container}>
-        <Text style={styles.logo}>Ranzinzim</Text>
-        <QuadradoLendas>
-          <Text style={styles.rara}>Rara</Text>
-          <Text style={styles.origem}>Lava (Original)</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Molten_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Molten_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Molten_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Coração de Leão</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Lionheart_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Lionheart_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Lionheart_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Tundra</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Tundra_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Tundra_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Tundra_Tier_3.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-        <QuadradoLendas>
-          <Text style={styles.epica}>Épica</Text>
-          <Text style={styles.origem}>Vastinata</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Void-marked_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Void-marked_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Void-marked_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Silvestre</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Willowbark_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Willowbark_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Willowbark_Tier_3.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-        <QuadradoLendas>
-          <Text style={styles.lendaria}>Lendária</Text>
-          <Text style={styles.origem}>Sorvetinho</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Sugarcone_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Sugarcone_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Sugarcone_Tier_3.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-      </View>
+      <ScrollView>
+        <View style={styles.container}>
+          <Text style={styles.logo}>Ranzinzim</Text>
+          <QuadradoLendas>
+            <Text style={styles.rara}>Rara</Text>
+            <Text style={styles.origem}>Lava (Original)</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Molten_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Molten_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Molten_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Coração de Leão</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Lionheart_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Lionheart_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Lionheart_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Tundra</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Tundra_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Tundra_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Tundra_Tier_3.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+          <QuadradoLendas>
+            <Text style={styles.epica}>Épica</Text>
+            <Text style={styles.origem}>Vastinata</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Void-marked_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Void-marked_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Void-marked_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Silvestre</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Willowbark_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Willowbark_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Willowbark_Tier_3.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+          <QuadradoLendas>
+            <Text style={styles.lendaria}>Lendária</Text>
+            <Text style={styles.origem}>Sorvetinho</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Sugarcone_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Sugarcone_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Sugarcone_Tier_3.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+        </View>
+      </ScrollView>
     </ImageBackground >)
   }
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, StyleSheet, Text, ImageBackground, Vibration, Image } from 'react-native';
+import { View, StyleSheet, Text, ImageBackground, Vibration, Image, ScrollView } from 'react-native';
 import QuadradoLendas from '../../components/quadradoLendas'
 
 export interface AppProps {
@@ -18,42 +18,44 @@ export default class RapininhaScreen extends React.Component<AppProps, AppState>
   public render() {
     return (<ImageBackground source={require('./../../../assets/img/backgroundInicio.jpg')}
       style={styles.background}>
-      <View style={styles.container}>
-        <Text style={styles.logo}>Rapininha</Text>
-        <QuadradoLendas>
-          <Text style={styles.rara}>Rara</Text>
-          <Text style={styles.origem}>Demaciana (Original)</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Demacian_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Demacian_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Demacian_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Alvorada</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Dawnglow_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Dawnglow_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Dawnglow_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Flora</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Rosebloom_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Rosebloom_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Rosebloom_Tier_3.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-        <QuadradoLendas>
-          <Text style={styles.epica}>Épica</Text>
-          <Text style={styles.origem}>Flor de Inverno</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Snow_Cherry_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Snow_Cherry_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Snow_Cherry_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Tropical</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Tropical_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Tropical_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Tropical_Tier_3.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-        <QuadradoLendas>
-          <Text style={styles.lendaria}>Lendária</Text>
-          <Text style={styles.origem}>Perdida</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Lost_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Lost_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Lost_Tier_3.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-      </View>
+      <ScrollView>
+        <View style={styles.container}>
+          <Text style={styles.logo}>Rapininha</Text>
+          <QuadradoLendas>
+            <Text style={styles.rara}>Rara</Text>
+            <Text style={styles.origem}>Demaciana (Original)</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Demacian_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Demacian_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Demacian_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Alvorada</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Dawnglow_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Dawnglow_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Dawnglow_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Flora</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Rosebloom_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Rosebloom_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Rosebloom_Tier_3.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+          <QuadradoLendas>
+            <Text style={styles.epica}>Épica</Text>
+            <Text style={styles.origem}>Flor de Inverno</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Snow_Cherry_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Snow_Cherry_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Snow_Cherry_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Tropical</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Tropical_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Tropical_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Tropical_Tier_3.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+          <QuadradoLendas>
+            <Text style={styles.lendaria}>Lendária</Text>
+            <Text style={styles.origem}>Perdida</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Lost_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Lost_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Rapininha/Silverwing_Lost_Tier_3.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+        </View>
+      </ScrollView>
     </ImageBackground >)
   }
 }

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, ImageBackground, Vibration, Image } from 'react-native';
 import QuadradoView from './../components/quadradoInicio'
+import { ScrollView } from 'react-native-gesture-handler';
 
 export interface AppProps {
 }
@@ -18,31 +19,33 @@ export default class PatchScreen extends React.Component<AppProps, AppState> {
     public render() {
         return (<ImageBackground source={require('./../../assets/img/backgroundInicio.jpg')}
             style={styles.background}>
-            <View style={styles.container}>
-                <Text style={styles.titulo}>Patch Notes</Text>
-                <QuadradoView>
-                    <Text style={styles.semiTitulo}>9.16b</Text>
-                    <Text style={styles.tema}>Campeões</Text>
-                    <Image source={require('./../../assets/img/Champs/Todos/Draven_GladiatorSquare.png')} style={styles.champImg}></Image>
-                    <Text style={styles.champText}>Draven:</Text>
-                    <Text style={styles.info}>Vida: 700 -> 600</Text>
-                    <Text style={styles.info}>Dano de Ataque: 75 -> 70</Text>
-                    <Image source={require('./../../assets/img/Champs/Todos/JinxSquare.png')} style={styles.champImg}></Image>
-                    <Text style={styles.champText}>Jinx:</Text>
-                    <Text style={styles.info}>Velocidade de Ataque adicional da Habilidade: 0,75/1,0/1,25 -> 0,6/0,8/1,0</Text>
-                    <Text style={styles.info}>Dano do míssil: 100/225/350 -> 100/200/300</Text>
-                    <Image source={require('./../../assets/img/Champs/Todos/KayleSquare.png')} style={styles.champImg}></Image>
-                    <Text style={styles.champText}>Kayle:</Text>
-                    <Text style={styles.info}>Duração do escudo: 2/3/4 -> 2/2,5/3</Text>
-                    <Image source={require('./../../assets/img/Champs/Todos/LucianSquare.png')} style={styles.champImg}></Image>
-                    <Text style={styles.champText}>Lucian:</Text>
-                    <Text style={styles.info}>Dano da Habilidade: 150/250/350 -> 100/225/350</Text>
-                    <Text style={styles.tema}>Itens</Text>
-                    <Image source={require('./../../assets/img/Itens/Completo/Ludens_Echo_item.png')} style={styles.champImg}></Image>
-                    <Text style={styles.champText}>Eco de Luden:</Text>
-                    <Text style={styles.info}>Dano: 200 -> 180</Text>
-                </QuadradoView>
-            </View>
+            <ScrollView>
+                <View style={styles.container}>
+                    <Text style={styles.titulo}>Patch Notes</Text>
+                    <QuadradoView>
+                        <Text style={styles.semiTitulo}>9.16b</Text>
+                        <Text style={styles.tema}>Campeões</Text>
+                        <Image source={require('./../../assets/img/Champs/Todos/Draven_GladiatorSquare.png')} style={styles.champImg}></Image>
+                        <Text style={styles.champText}>Draven:</Text>
+                        <Text style={styles.info}>Vida: 700 -> 600</Text>
+                        <Text style={styles.info}>Dano de Ataque: 75 -> 70</Text>
+                        <Image source={require('./../../assets/img/Champs/Todos/JinxSquare.png')} style={styles.champImg}></Image>
+                        <Text style={styles.champText}>Jinx:</Text>
+                        <Text style={styles.info}>Velocidade de Ataque adicional da Habilidade: 0,75/1,0/1,25 -> 0,6/0,8/1,0</Text>
+                        <Text style={styles.info}>Dano do míssil: 100/225/350 -> 100/200/300</Text>
+                        <Image source={require('./../../assets/img/Champs/Todos/KayleSquare.png')} style={styles.champImg}></Image>
+                        <Text style={styles.champText}>Kayle:</Text>
+                        <Text style={styles.info}>Duração do escudo: 2/3/4 -> 2/2,5/3</Text>
+                        <Image source={require('./../../assets/img/Champs/Todos/LucianSquare.png')} style={styles.champImg}></Image>
+                        <Text style={styles.champText}>Lucian:</Text>
+                        <Text style={styles.info}>Dano da Habilidade: 150/250/350 -> 100/225/350</Text>
+                        <Text style={styles.tema}>Itens</Text>
+                        <Image source={require('./../../assets/img/Itens/Completo/Ludens_Echo_item.png')} style={styles.champImg}></Image>
+                        <Text style={styles.champText}>Eco de Luden:</Text>
+                        <Text style={styles.info}>Dano: 200 -> 180</Text>
+                    </QuadradoView>
+                </View>
+            </ScrollView>
         </ImageBackground>)
     }
 }
@@ -59,7 +62,7 @@ const styles = StyleSheet.create({
     },
     titulo: {
         color: 'white',
-        fontSize: 30,
+        fontSize: 34,
         textAlign: 'center',
     },
     champImg: {

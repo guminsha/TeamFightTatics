@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, StyleSheet, Text, ImageBackground, Vibration, Image } from 'react-native';
+import { View, StyleSheet, Text, ImageBackground, Vibration, Image, ScrollView } from 'react-native';
 import QuadradoLendas from '../../components/quadradoLendas'
 
 export interface AppProps {
@@ -18,42 +18,44 @@ export default class ProtetorScreen extends React.Component<AppProps, AppState> 
   public render() {
     return (<ImageBackground source={require('./../../../assets/img/backgroundInicio.jpg')}
       style={styles.background}>
-      <View style={styles.container}>
-        <Text style={styles.logo}>Protetor</Text>
-        <QuadradoLendas>
-          <Text style={styles.rara}>Rara</Text>
-          <Text style={styles.origem}>Adornado (Original)</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Jeweled_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Jeweled_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Jeweled_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Majestoso</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Reigning_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Reigning_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Reigning_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Sombrio</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Shadowgem_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Shadowgem_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Shadowgem_Tier_3.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-        <QuadradoLendas>
-          <Text style={styles.epica}>Épica</Text>
-          <Text style={styles.origem}>Ferino</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Fierce_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Fierce_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Fierce_Tier_3.png')} style={styles.lenda}></Image>
-          <Text style={styles.origem}>Celeste</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Skygem_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Skygem_Tier_2.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Skygem_Tier_3.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-        <QuadradoLendas>
-          <Text style={styles.lendaria}>Lendária</Text>
-          <Text style={styles.origem}>Solnato</Text>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Sunborn_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Sunborn_Tier_1.png')} style={styles.lenda}></Image>
-          <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Sunborn_Tier_1.png')} style={styles.lenda}></Image>
-        </QuadradoLendas>
-      </View>
+      <ScrollView>
+        <View style={styles.container}>
+          <Text style={styles.logo}>Protetor</Text>
+          <QuadradoLendas>
+            <Text style={styles.rara}>Rara</Text>
+            <Text style={styles.origem}>Adornado (Original)</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Jeweled_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Jeweled_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Jeweled_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Majestoso</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Reigning_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Reigning_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Reigning_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Sombrio</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Shadowgem_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Shadowgem_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Shadowgem_Tier_3.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+          <QuadradoLendas>
+            <Text style={styles.epica}>Épica</Text>
+            <Text style={styles.origem}>Ferino</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Fierce_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Fierce_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Fierce_Tier_3.png')} style={styles.lenda}></Image>
+            <Text style={styles.origem}>Celeste</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Skygem_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Skygem_Tier_2.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Skygem_Tier_3.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+          <QuadradoLendas>
+            <Text style={styles.lendaria}>Lendária</Text>
+            <Text style={styles.origem}>Solnato</Text>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Sunborn_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Sunborn_Tier_1.png')} style={styles.lenda}></Image>
+            <Image source={require('./../../../assets/img/Lendas/Todas/Protetor/Protector_Sunborn_Tier_1.png')} style={styles.lenda}></Image>
+          </QuadradoLendas>
+        </View>
+      </ScrollView>
     </ImageBackground >)
   }
 }
