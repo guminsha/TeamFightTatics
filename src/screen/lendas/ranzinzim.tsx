@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, ImageBackground, Vibration, Image, ScrollView } from 'react-native';
-import QuadradoLendas from '../../components/quadradoLendas'
+import Quadrado from '../../components/quadrado'
 
 export interface AppProps {
 }
@@ -21,7 +21,7 @@ export default class RanzinzimScreen extends React.Component<AppProps, AppState>
       <ScrollView>
         <View style={styles.container}>
           <Text style={styles.logo}>Ranzinzim</Text>
-          <QuadradoLendas>
+          <Quadrado>
             <Text style={styles.rara}>Rara</Text>
             <Text style={styles.origem}>Lava (Original)</Text>
             <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Molten_Tier_1.png')} style={styles.lenda}></Image>
@@ -35,8 +35,8 @@ export default class RanzinzimScreen extends React.Component<AppProps, AppState>
             <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Tundra_Tier_1.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Tundra_Tier_2.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Tundra_Tier_3.png')} style={styles.lenda}></Image>
-          </QuadradoLendas>
-          <QuadradoLendas>
+          </Quadrado>
+          <Quadrado>
             <Text style={styles.epica}>Épica</Text>
             <Text style={styles.origem}>Vastinata</Text>
             <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Void-marked_Tier_1.png')} style={styles.lenda}></Image>
@@ -46,14 +46,14 @@ export default class RanzinzimScreen extends React.Component<AppProps, AppState>
             <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Willowbark_Tier_1.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Willowbark_Tier_2.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Willowbark_Tier_3.png')} style={styles.lenda}></Image>
-          </QuadradoLendas>
-          <QuadradoLendas>
+          </Quadrado>
+          <Quadrado>
             <Text style={styles.lendaria}>Lendária</Text>
             <Text style={styles.origem}>Sorvetinho</Text>
             <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Sugarcone_Tier_1.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Sugarcone_Tier_2.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Ranzinzim/Furyhorn_Sugarcone_Tier_3.png')} style={styles.lenda}></Image>
-          </QuadradoLendas>
+          </Quadrado>
         </View>
       </ScrollView>
     </ImageBackground >)

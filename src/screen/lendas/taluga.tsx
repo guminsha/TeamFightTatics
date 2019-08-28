@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, ImageBackground, Vibration, Image, ScrollView } from 'react-native';
-import QuadradoLendas from '../../components/quadradoLendas'
+import Quadrado from '../../components/quadrado'
 
 export interface AppProps {
 }
@@ -21,7 +21,7 @@ export default class TalugaScreen extends React.Component<AppProps, AppState> {
       <ScrollView>
         <View style={styles.container}>
           <Text style={styles.logo}>Taluga</Text>
-          <QuadradoLendas>
+          <Quadrado>
             <Text style={styles.rara}>Rara</Text>
             <Text style={styles.origem}>Jade (Original)</Text>
             <Image source={require('./../../../assets/img/Lendas/Todas/Taluga/Paddlemar_Jade_Tier_1.png')} style={styles.lenda}></Image>
@@ -35,8 +35,8 @@ export default class TalugaScreen extends React.Component<AppProps, AppState> {
             <Image source={require('./../../../assets/img/Lendas/Todas/Taluga/Paddlemar_Tidepool_Tier_1.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Taluga/Paddlemar_Tidepool_Tier_2.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Taluga/Paddlemar_Tidepool_Tier_3.png')} style={styles.lenda}></Image>
-          </QuadradoLendas>
-          <QuadradoLendas>
+          </Quadrado>
+          <Quadrado>
             <Text style={styles.epica}>Épica</Text>
             <Text style={styles.origem}>Vulcânica</Text>
             <Image source={require('./../../../assets/img/Lendas/Todas/Taluga/Paddlemar_Caldera_Tier_1.png')} style={styles.lenda}></Image>
@@ -46,14 +46,14 @@ export default class TalugaScreen extends React.Component<AppProps, AppState> {
             <Image source={require('./../../../assets/img/Lendas/Todas/Taluga/Paddlemar_Glamorous_Tier_1.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Taluga/Paddlemar_Glamorous_Tier_1.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Taluga/Paddlemar_Glamorous_Tier_1.png')} style={styles.lenda}></Image>
-          </QuadradoLendas>
-          <QuadradoLendas>
+          </Quadrado>
+          <Quadrado>
             <Text style={styles.lendaria}>Lendária</Text>
             <Text style={styles.origem}>Reninha</Text>
             <Image source={require('./../../../assets/img/Lendas/Todas/Taluga/Paddlemar_Yuletide_Tier_1.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Taluga/Paddlemar_Yuletide_Tier_1.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Taluga/Paddlemar_Yuletide_Tier_1.png')} style={styles.lenda}></Image>
-          </QuadradoLendas>
+          </Quadrado>
         </View>
       </ScrollView>
     </ImageBackground >)

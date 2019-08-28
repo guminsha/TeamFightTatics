@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, ImageBackground } from 'react-native';
 import { Input, Button } from 'react-native-elements';
-import QuadradoView from './../components/quadradoInicio'
+import Quadrado from './../components/quadrado'
 
 export interface AppProps {
 }
@@ -27,22 +27,20 @@ export default class InvocadorScreen extends React.Component<AppProps, AppState>
     public render() {
         return (<ImageBackground source={require('./../../assets/img/backgroundInicio.jpg')}
             style={styles.background}>
-            <Text style={styles.titulo}>Buscar Invocador</Text>
             <View style={styles.container}>
-                <Input placeholder='Digite seu nome de invocador'
-                    leftIcon={{ name: 'person', color: 'white' }}
-                    inputContainerStyle={styles.containerInput}
-                    inputStyle={{ color: 'white' }}
-                    onChangeText={invocador => this.setState({ invocador })}
-                />
+                <Text style={styles.titulo}>Buscar Invocador</Text>
+                <Quadrado>
+                    <Input placeholder='Digite seu nome de invocador'
+                        leftIcon={{ name: 'person', color: 'white' }}
+                        inputContainerStyle={styles.containerInput}
+                        inputStyle={{ color: 'white' }}
+                        onChangeText={invocador => this.setState({ invocador })}
+                    />
+                </Quadrado>
                 <View style={{ alignItems: 'center' }}>
                     <Button title="Buscar" onPress={() => this.buscarInvocador()} buttonStyle={{ borderRadius: 20, width: 150, marginTop: 20 }} />
                 </View>
-                <QuadradoView>
-                    <Text style={styles.info}>"Invocador"</Text>
-                    <Text style={styles.info}>"Level"</Text>
-                    <Text style={styles.info}>"Elo TFT"</Text>
-                </QuadradoView>
+
             </View>
         </ImageBackground>)
     }
@@ -56,15 +54,12 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 10,
-        flexDirection: 'column',
-        alignItems: 'stretch',
+        marginTop: 20,
     },
     titulo: {
         color: 'white',
         fontSize: 32,
         textAlign: 'center',
-        marginTop: 20,
-        marginBottom: 20,
     },
     containerInput: {
         backgroundColor: 'rgba(255,255,255,0.5)',

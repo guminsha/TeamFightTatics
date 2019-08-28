@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, ImageBackground } from 'react-native';
 import { Video } from 'expo-av';
-import  QuadradoInicio  from './../components/quadradoInicio'
+import  Quadrado  from './../components/quadrado'
 
 export interface AppProps {
 }
@@ -29,13 +29,13 @@ export default class InicioScreen extends React.Component<AppProps, AppState> {
           resizeMode="cover"
           shouldPlay
           useNativeControls
-          style={{ width: '100%', height: '50%', marginTop: 20, alignContent: 'center' }}
+          style={{ width: '100%', height: '50%', marginTop: 20, alignContent: 'center', borderRadius: 10 }}
         />
 
-        <QuadradoInicio>
+        <Quadrado>
           <Text style={styles.tituloVideo}>Leona AP Feellings</Text>
           <Text style={styles.tituloVideo}>Créditos: Página "TFT só tem maníaco"</Text>
-        </QuadradoInicio>
+        </Quadrado>
       </View>
     </ImageBackground>)
   }

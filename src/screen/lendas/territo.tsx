@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, ImageBackground, Vibration, Image, ScrollView } from 'react-native';
-import QuadradoLendas from '../../components/quadradoLendas'
+import Quadrado from '../../components/quadrado'
 
 export interface AppProps {
 }
@@ -21,7 +21,7 @@ export default class TerritoScreen extends React.Component<AppProps, AppState> {
       <ScrollView>
         <View style={styles.container}>
           <Text style={styles.logo}>Territo</Text>
-          <QuadradoLendas>
+          <Quadrado>
             <Text style={styles.rara}>Rara</Text>
             <Text style={styles.origem}>Blindado (Original)</Text>
             <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Soft-nosed_Tier_1.png')} style={styles.lenda}></Image>
@@ -35,8 +35,8 @@ export default class TerritoScreen extends React.Component<AppProps, AppState> {
             <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Fresh-water_Tier_1.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Fresh-water_Tier_2.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Fresh-water_Tier_3.png')} style={styles.lenda}></Image>
-          </QuadradoLendas>
-          <QuadradoLendas>
+          </Quadrado>
+          <Quadrado>
             <Text style={styles.epica}>Épica</Text>
             <Text style={styles.origem}>Desastrado</Text>
             <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Clumsy_Tier_1.png')} style={styles.lenda}></Image>
@@ -46,14 +46,14 @@ export default class TerritoScreen extends React.Component<AppProps, AppState> {
             <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Toxic_Tier_1.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Toxic_Tier_2.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Toxic_Tier_3.png')} style={styles.lenda}></Image>
-          </QuadradoLendas>
-          <QuadradoLendas>
+          </Quadrado>
+          <Quadrado>
             <Text style={styles.lendaria}>Lendária</Text>
             <Text style={styles.origem}>Colorido</Text>
             <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Skydance_Tier_1.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Skydance_Tier_2.png')} style={styles.lenda}></Image>
             <Image source={require('./../../../assets/img/Lendas/Todas/Territo/Molediver_Skydance_Tier_3.png')} style={styles.lenda}></Image>
-          </QuadradoLendas>
+          </Quadrado>
         </View>
       </ScrollView>
     </ImageBackground >)
