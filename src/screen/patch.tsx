@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, StyleSheet, Text, ImageBackground, Vibration, Image } from 'react-native';
+import { View, StyleSheet, Text, ImageBackground, Image } from 'react-native';
 import Quadrado from './../components/quadrado'
 import { ScrollView } from 'react-native-gesture-handler';
 

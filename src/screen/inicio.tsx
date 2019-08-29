@@ -29,7 +29,7 @@ export default class InicioScreen extends React.Component<AppProps, AppState> {
           resizeMode="cover"
           shouldPlay
           useNativeControls
-          style={{ width: '100%', height: '50%', marginTop: 20, alignContent: 'center', borderRadius: 10 }}
+          style={{ width: '100%', height: '50%', marginTop: 20, alignContent: 'center', borderRadius: 10, borderWidth: 2, borderColor: 'rgb(255, 215, 0)'}}
         />
 
         <Quadrado>
