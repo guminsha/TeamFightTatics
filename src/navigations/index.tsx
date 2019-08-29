@@ -1,7 +1,10 @@
 import { createStackNavigator, createAppContainer, createBottomTabNavigator, createSwitchNavigator } from 'react-navigation';
 import InicioScreen from '../screen/inicio';
+import CampeaoScreen from '../screen/campeao';
 import LendaScreen from '../screen/lenda';
 import PatchScreen from '../screen/patch';
+import ItemScreen from '../screen/item';
+
 import InvocadorScreen from '../screen/invocador';
 import AssombrimScreen from '../screen/lendas/assombrim';
 import FelpinaScreen from '../screen/lendas/felpina';
@@ -12,6 +15,10 @@ import RapininhaScreen from '../screen/lendas/rapininha';
 import RunirimScreen from '../screen/lendas/runirim';
 import TalugaScreen from '../screen/lendas/taluga';
 import TerritoScreen from '../screen/lendas/territo';
+
+import PantheonScreen from '../screen/campeoes/pantheon';
+
+import LudenScreen from '../screen/itens/luden';
 
 
 const navigationLendas = createStackNavigator({
@@ -99,11 +106,63 @@ const navigationLendas = createStackNavigator({
 },
 );
 
+const navigationChamps = createStackNavigator({
+	campeao: {
+		screen: CampeaoScreen,
+		navigationOptions: {
+			title: 'Campeões',
+			header: null
+		}
+	},
+	pantheon: {
+		screen: PantheonScreen,
+		navigationOptions: {
+			headerStyle: {
+				backgroundColor: 'rgba(255,255,255,0.0)'
+			}
+		},
+	},
+},
+);
+
+const navigationItens = createStackNavigator({
+	item: {
+		screen: ItemScreen,
+		navigationOptions: {
+			title: 'Campeões',
+			header: null
+		}
+	},
+	luden: {
+		screen: LudenScreen,
+		navigationOptions: {
+			headerStyle: {
+				backgroundColor: 'rgba(255,255,255,0.0)'
+			}
+		},
+	},
+},
+);
+
 const navigationInicio = createBottomTabNavigator({
 	inicio: {
 		screen: InicioScreen,
 		navigationOptions: {
 			title: 'Inicio',
+			header: null
+		}
+	},
+	campeao: {
+		screen: navigationChamps,
+		navigationOptions: {
+			title: 'Campeões',
+			header: null
+		}
+	},
+	itens: {
+		screen: navigationItens,
+		navigationOptions: {
+			title: 'Itens',
 			header: null
 		}
 	},
@@ -117,14 +176,14 @@ const navigationInicio = createBottomTabNavigator({
 	patch: {
 		screen: PatchScreen,
 		navigationOptions: {
-			title: 'Patch Notes',
+			title: 'Patch',
 			header: null
 		}
 	},
 	invocador: {
 		screen: InvocadorScreen,
 		navigationOptions: {
-			title: 'Buscar Invocador',
+			title: 'Invocador',
 			header: null
 		}
 	},
